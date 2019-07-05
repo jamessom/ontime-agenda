@@ -15,9 +15,9 @@
 -->
 
 <!-- [![Build Status][build-shield]][build-url]-->
-[![Contributors][contributors-shield]][https://github.com/jamessom/ontime-agenda/graphs/contributors]
-[![MIT License][license-shield]][https://github.com/jamessom/ontime-agenda/blob/master/LICENSE]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/jamessomqueiroz/]
+[![Contributors][contributors-shield]][contributors-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -63,7 +63,7 @@
 <!-- Sobre o Projeto -->
 ## Sobre o Projeto
 
-[![Product Name Screen Shot][product-screenshot]](https://ontime-agenda.herokuapp.com/)
+<!--[![Product Name Screen Shot][product-screenshot]](https://ontime-agenda.herokuapp.com/)-->
 
 
 ### Desenvolvido com
@@ -105,3 +105,18 @@ Distribuído sobre a licença MIT. Veja [https://github.com/jamessom/ontime-agen
 Jamessom Queiroz - jamessomqueiroz@gmail.com
 
 Link do Projeto: [https://github.com/jamessom/ontime-agenda](https://github.com/jamessom/ontime-agenda)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!--
+[build-url]: #
+[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
+[product-screenshot]: #
+-->
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
+[contributors-url]: https://github.com/jamessom/ontime-agenda/graphs/contributors
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: https://choosealicense.com/licenses/mit
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/jamessomqueiroz/
