@@ -25,7 +25,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jamessom/ontime-agenda/">
-    <img src="https://github.com/jamessom/ontime-agenda/tree/master/app/assets/images/logo_3.png" alt="Logo" >
+    <img src="https://github.com/jamessom/ontime-agenda/blob/master/app/assets/images/logo_3.png" alt="Logo" >
   </a>
 
   <h3 align="center">OnTime Agenda</h3>
