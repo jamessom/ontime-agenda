@@ -110,6 +110,8 @@ Link do Projeto: [https://github.com/jamessom/ontime-agenda](https://github.com/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!--
+[coverage-url]: 
+[coverage-shield]: https://img.shields.io/codecov/c/github/jamessom/ontime-agenda.svg?style=flat-square
 [build-url]: #
 [build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
 [product-screenshot]: #
