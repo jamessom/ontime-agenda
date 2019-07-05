@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  ontime_db:
+    container_name: ontime_db
+    image: postgres:9.5-alpine
+    ports: [ "5432:5432" ]
+    networks: [ ontime_net ]
+    logging:
+      driver: "none"
+
+  ontime_app:
+    image: ontime_app:latest
+    container_name: ontime_app
+    build: .
+    command: sh start.sh
+    volumes: [ ".:/ontime_app", ".gems_ontime:/.gems_ontime" ]
+    ports: [ "3030:3000" ]
+    networks: [ ontime_net ]
+    links: [ ontime_db ]
+    depends_on: [ ontime_db ]
+    env_file: [ ".env" ]
+
+volumes:
+  .gems_ontime:
+
+networks:
+  ontime_net:
+    driver: bridge
