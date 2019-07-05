@@ -1,4 +1,4 @@
-FROM ruby:2.3-alpine
+FROM ruby:2.5.5-alpine
 
 ENV APP_HOME /ontime_app
 ENV BUNDLE_PATH ${APP_HOME}/.gems_ontime
