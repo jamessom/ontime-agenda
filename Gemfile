@@ -35,6 +35,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'simplecov', '~> 0.17.0', require: false
   gem 'codecov', '~> 0.1.14', require: false
 end
 
