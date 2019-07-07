@@ -3,12 +3,18 @@ if ENV.include? 'CODECOV_TOKEN'
   SimpleCov.start 'rails' do
     add_filter '/bin/'
     add_filter '/db/'
+    add_filter '/app/channels/'
+    add_filter '/app/mailers/'
+    add_filter '/app/jobs/'
     add_filter '/.gems_ontime/'
     add_filter '/test/' # for minitest
   end
 
   require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCov::Formatter::Codecov
+  ])
 end
 
 ENV['RAILS_ENV'] ||= 'test'
