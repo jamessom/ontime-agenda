@@ -19,8 +19,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -44,8 +42,6 @@
   </p>
 </p>
 
-
-
 <!-- Sumário -->
 ## Sumário
 
@@ -58,29 +54,44 @@
 * [Licença](#licença)
 * [Contato](#contato)
 
-
-
 <!-- Sobre o Projeto -->
 ## Sobre o Projeto
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://ontime-agenda.herokuapp.com/)-->
 
-
 ### Desenvolvido com
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 * [Ruby on Rails](https://rubyonrails.org/)
 
-
-
 <!-- Começando -->
 ## Começando
 
+Faça um clone do projeto :)
+
 ### Requisitos
+
+Para uma instalação default:
+
+* ruby 2.5.5
+* Ruby on Rails 5.2.3
+* PosgreSQL
+
+Uma outra opção é utilizar o docker, nesse caso:
+
+* Docker
+* docker-compose 2
 
 ### Instalação
 
+Com base em um ambiente de desenvolvimento utilizando o docker, faça os seguintes passos:
+
+- Crie um arquivo `.env`, com o seguinte comando `cp sample.env .env` e preencha os valores para as variáveis de ambiente.
+- Rode o comando `docker-compose build` para fazer o build da aplicação e instalar as imagens base.
+- Rode o comando `docker-compose run --rm ontime_app bundle exec rails db:create` para criar o banco de dados.
+- Rode o comando `docker-compose run --rm ontime_app bundle exec rails db:migrate` para criar as tabelas necessárias.
+- Rode o comando `docker-compose up` para subir o servidor e ter o log direto no terminal ou utilize `docker-compose up -d` para subiro servidor e liberar a saída do terminal.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -90,14 +101,10 @@ Qualquer contribuição que você fizer **será muito bem-vinda.**
 
 Para mais detalhes de como contribuir veja [https://github.com/jamessom/ontime-agenda/blob/master/CONTRIBUTING.md](CONTRIBUTING).
 
-
-
 <!-- Licença -->
 ## Licença
 
 Distribuído sobre a licença MIT. Veja [https://github.com/jamessom/ontime-agenda/blob/master/LICENSE](LICENSE) para mais informações.
-
-
 
 <!-- Contato -->
 ## Contato
