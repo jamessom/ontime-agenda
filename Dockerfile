@@ -3,7 +3,7 @@ FROM ruby:2.5.5-alpine
 ENV APP_HOME /ontime_app
 ENV BUNDLE_PATH ${APP_HOME}/.gems_ontime
 
-RUN apk update && apk upgrade && apk --no-cache add build-base nodejs postgresql-dev tzdata && rm -rf /var/cache/apk/*
+RUN apk update && apk upgrade && apk --no-cache add build-base nodejs postgresql-dev git tzdata && rm -rf /var/cache/apk/*
 
 ENV PATH=/root/.yarn/bin:$PATH
 RUN apk add --virtual build-yarn curl && touch ~/.bashrc && \
