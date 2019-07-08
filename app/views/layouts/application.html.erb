@@ -9,7 +9,12 @@
 
     <title>Ontime Agenda</title>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag'application', media: 'all' %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootswatch/3.4.1/yeti/bootstrap.min.css',
+      media: 'all',
+      crossorigin: "anonymous"
+    %>
+
     <%= javascript_include_tag 'application' %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -19,6 +24,35 @@
   </head>
 
   <body>
+
+    <% if user_signed_in? %>
+      <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+
+          <button type="button" class="navbar-toggle text-right" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="navbar-header">
+            <a class="navbar-brand" href="<%= home_index_path %>">
+              <%= image_tag 'logo_horizontal.png', alt: "OnTime Agenda", class: "ontime-logo" %>
+            </a>
+          </div>
+          
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav"></ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><p class="navbar-text">Usuário: <%= current_user.first_name %></p></li>
+              <li><%= link_to('Logout', destroy_user_session_path, method: :delete, class: "") %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
