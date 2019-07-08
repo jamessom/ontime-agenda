@@ -42,7 +42,9 @@
           </div>
           
           <div class="navbar-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav"></ul>
+            <ul class="nav navbar-nav">
+              <li><%= link_to('Reservas', bookings_path) %></li>
+            </ul>
 
             <ul class="nav navbar-nav navbar-right">
               <li><p class="navbar-text">Usuário: <%= current_user.first_name %></p></li>
