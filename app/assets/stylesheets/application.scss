@@ -6,3 +6,48 @@
  *= require_self
  *= require_tree .
 */
+
+$custom-nav-height: 55px;
+
+$color-base: #007196;
+$color-light: #0b99c7;
+$color-hover: #0279a0;
+
+.navbar {
+  height: $custom-nav-height;
+  
+  .navbar-header { height: $custom-nav-height; }
+
+  .navbar-brand {
+    padding: 5px 15px;
+    .ontime-logo { height: 45px; }
+  }
+
+  .navbar-toggle {
+    &:hover { .icon-bar { background-color: $color-base !important; }}
+  }
+
+  ul.navbar-nav {
+    li { 
+      height: $custom-nav-height;
+
+      a {
+        padding: 16px 15px;
+        &:hover { background-color: $color-hover; transition: all 0.3s ease }
+        &:focus { background-color: $color-hover; transition: all 0.3s ease }
+      }
+    }
+
+    .navbar-text {
+      margin: 0px 15px;
+      line-height: $custom-nav-height;
+    }
+  }
+
+  .navbar-collapse {
+    @media screen and (max-width: 767px) {
+      background-color: $color-light;
+      .navbar-nav{ margin: 0px -15px; }
+    }
+  }
+}
