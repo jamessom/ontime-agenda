@@ -1,0 +1,23 @@
+AllCops:
+  Exclude:
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'libs/**/*'
+    - 'test/**/*'
+    - 'bin/**/*'
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 160
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 3
+
+Metrics/BlockLength:
+  Max: 100
+  
+Metrics/AbcSize:
+  Max: 30
