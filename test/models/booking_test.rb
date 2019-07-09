@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class BookingTest < ActiveSupport::TestCase
   def setup
-    @booking = Booking.new(description: "Some description", user_id: 1) 
+    @booking = Booking.new(description: 'Some description', user_id: 1)
   end
 
   test 'valid booking' do
@@ -16,6 +18,6 @@ class BookingTest < ActiveSupport::TestCase
 
     @booking.description = nil
     refute @booking.valid?, 'Must be valid'
-    assert_equal [:user, :description], @booking.errors.keys, 'Value description and user_id must be present'
+    assert_equal %i[user description], @booking.errors.keys, 'Value description and user_id must be present'
   end
 end

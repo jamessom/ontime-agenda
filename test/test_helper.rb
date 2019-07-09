@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 if ENV.include? 'CODECOV_TOKEN'
   require 'simplecov'
   SimpleCov.start 'rails' do
@@ -12,9 +14,9 @@ if ENV.include? 'CODECOV_TOKEN'
 
   require 'codecov'
   SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
-    SimpleCov::Formatter::HTMLFormatter,
-    SimpleCov::Formatter::Codecov
-  ])
+                                                                    SimpleCov::Formatter::HTMLFormatter,
+                                                                    SimpleCov::Formatter::Codecov
+                                                                  ])
 end
 
 ENV['RAILS_ENV'] ||= 'test'
@@ -29,11 +31,11 @@ class ActiveSupport::TestCase
   include Devise::Test::IntegrationHelpers
   include Warden::Test::Helpers
 
-  def login user
+  def login(user)
     if integration_test?
-      login_as user, :scope => user
+      login_as user, scope: user
     else
-     sign_in user 
+      sign_in user
     end
   end
 end
