@@ -1,0 +1,6 @@
+#!/bin/sh
+
+args="$@"
+command="bundle exec reek $args"
+echo "$command"
+docker-compose run --rm ontime_app sh -c "/bin/sh -c \"$command\""

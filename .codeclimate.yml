@@ -1,13 +1,19 @@
+plugins:
+  reek:
+    enabled: true
+  rubocop:
+    enabled: true
+
 exclude_patterns:
-- "config/"
-- "db/"
-- "dist/"
-- "lib/"
-- "tmp/"
-- "script/"
-- "public/"
-- "**/spec/"
-- "**/test/"
-- "**/tests/"
-- "**/vendor/"
-- "app/assets/javascripts/"
+  - "config/"
+  - "db/"
+  - "dist/"
+  - "lib/"
+  - "tmp/"
+  - "script/"
+  - "public/"
+  - "**/spec/"
+  - "**/test/"
+  - "**/tests/"
+  - "**/vendor/"
+  - "app/assets/javascripts/"
