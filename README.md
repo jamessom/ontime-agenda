@@ -14,7 +14,9 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-<!-- [![Build Status][build-shield]][build-url]-->
+[![Build Status][build-shield]][build-url]
+[![Coverage][coverage-shield]][coverage-url]
+[![Maintainability][maintainability-shield]][maintainability-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -116,13 +118,13 @@ Link do Projeto: [https://github.com/jamessom/ontime-agenda](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!--
-[coverage-url]: 
+<!-- [product-screenshot]: # -->
+[coverage-url]: https://codecov.io/gh/jamessom/ontime-agenda
 [coverage-shield]: https://img.shields.io/codecov/c/github/jamessom/ontime-agenda.svg?style=flat-square
-[build-url]: #
-[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
-[product-screenshot]: #
--->
+[build-url]: https://app.codeship.com/projects/352726
+[build-shield]: https://app.codeship.com/projects/d0b321f0-8166-0137-fc99-7695ae8749ae/status?branch=master
+[maintainability-url]: https://codeclimate.com/github/jamessom/ontime-agenda/maintainability
+[maintainability-shield]: https://api.codeclimate.com/v1/badges/1b6840fd75de06c3ca66/maintainability
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [contributors-url]: https://github.com/jamessom/ontime-agenda/graphs/contributors
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square

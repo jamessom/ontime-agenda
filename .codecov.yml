@@ -1,0 +1,16 @@
+coverage:
+  ignore:
+    - lib/.*
+    - vendor/.*
+    - config/.*
+    - app/assets/.*
+
+  status:
+    patch:
+      default:
+        target: 100
+
+comment:
+  layout: "header, diff, changes, sunburst, uncovered"
+  branches: "*"
+  behavior: default

@@ -1,0 +1,13 @@
+exclude_patterns:
+- "config/"
+- "db/"
+- "dist/"
+- "lib/"
+- "tmp/"
+- "script/"
+- "public/"
+- "**/spec/"
+- "**/test/"
+- "**/tests/"
+- "**/vendor/"
+- "app/assets/javascripts/"
