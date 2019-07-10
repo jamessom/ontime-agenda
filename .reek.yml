@@ -1,11 +1,16 @@
+---
 detectors:
   IrresponsibleModule:
     enabled: false
 
+  TooManyStatements:
+    enabled: true
+    exclude: [ 'initialize' ]
+    max_statements: 10
+
   UtilityFunction:
     public_methods_only: true
-    exclude:
-      - "#authorize"
+    exclude: [ '#authorize' ]
 
   FeatureEnvy:
     enabled: false
@@ -13,5 +18,4 @@ detectors:
   ControlParameter:
     enabled: false
 
-exclude_paths:
-  - db/migrate
+exclude_paths: [ 'db/migrate' ]

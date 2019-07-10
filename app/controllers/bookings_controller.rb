@@ -26,28 +26,32 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
 
-    respond_to do |format|
-      if @booking.save
-        format.html { redirect_to @booking, notice: 'Booking was successfully created.' }
-        format.json { render :show, status: :created, location: @booking }
-      else
-        format.html { render :new }
-        format.json { render json: @booking.errors, status: :unprocessable_entity }
+    unless @booking.save
+      respond_to do |format|
+        format.any { render :new }
+        return
       end
+    end
+
+    respond_to do |format|
+      format.html { redirect_to @booking, notice: 'Booking was successfully created.' }
+      format.json { render :show, status: :created, location: @booking }
     end
   end
 
   # PATCH/PUT /bookings/1
   # PATCH/PUT /bookings/1.json
   def update
-    respond_to do |format|
-      if @booking.update(booking_params)
-        format.html { redirect_to @booking, notice: 'Booking was successfully updated.' }
-        format.json { render :show, status: :ok, location: @booking }
-      else
-        format.html { render :edit }
-        format.json { render json: @booking.errors, status: :unprocessable_entity }
+    unless @booking.update(booking_params)
+      respond_to do |format|
+        format.any { render :edit }
+        return
       end
+    end
+    
+    respond_to do |format|
+      format.html { redirect_to @booking, notice: 'Booking was successfully updated.' }
+      format.json { render :show, status: :ok, location: @booking }
     end
   end
 
