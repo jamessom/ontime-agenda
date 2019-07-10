@@ -48,7 +48,7 @@ class BookingsController < ApplicationController
         return
       end
     end
-    
+
     respond_to do |format|
       format.html { redirect_to @booking, notice: 'Booking was successfully updated.' }
       format.json { render :show, status: :ok, location: @booking }
