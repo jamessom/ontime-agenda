@@ -1,0 +1,18 @@
+pt-BR:
+  activerecord:
+    models:
+      booking:
+        one: Reserva
+        other: Reservas
+      user:
+        one: Usuário
+        other: Usuários
+    
+    attributes:
+      booking:
+        description: Descrição
+        user_id: ID do Usuário
+      user:
+        first_name: Nome
+        last_name: Sobrenome
+        email: E-mail
