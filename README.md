@@ -96,15 +96,15 @@ Com base em um ambiente de desenvolvimento utilizando o docker, faça os seguint
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contribuições são o que faz a comunidade _open source_ um lugar perfeito para o aprender, inspirar e criar.
-Qualquer contribuição que você fizer **será muito bem-vinda.**
+Contribuições são o que faz a comunidade _open source_ um lugar perfeito para aprender, inspirar e criar.
+Qualquer contribuição que você fizer **será muito bem-vinda!**
 
-Para mais detalhes de como contribuir veja [https://github.com/jamessom/ontime-agenda/blob/master/CONTRIBUTING.md](CONTRIBUTING).
+Para mais detalhes de como contribuir veja [CONTRIBUTING.md](https://github.com/jamessom/ontime-agenda/blob/master/CONTRIBUTING.md).
 
 <!-- Licença -->
 ## Licença
 
-Distribuído sobre a licença MIT. Veja [https://github.com/jamessom/ontime-agenda/blob/master/LICENSE](LICENSE) para mais informações.
+Distribuído sobre a licença MIT. Veja a [LICENSE](https://github.com/jamessom/ontime-agenda/blob/master/LICENSE) para mais informações.
 
 <!-- Contato -->
 ## Contato
